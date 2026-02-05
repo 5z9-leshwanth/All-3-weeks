@@ -1,0 +1,50 @@
+/* tailwind.css - Custom styles for Adaptive Landing Page */
+
+/* Header styling */
+header {
+    background-color: #f87171; /* red-400 */
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Main content */
+main {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+/* Enhanced feature cards */
+.feature {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Form focus states */
+input:focus, textarea:focus {
+    --tw-ring-color: #f87171; /* red-400 */
+}
+
+/* Responsive hero adjustments */
+@media (min-width: 1024px) {
+    #hero {
+        text-align: left;
+        max-width: 60ch;
+        margin: 0 auto;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937; /* gray-800 */
+}
+
+/* Print styles for lab record */
+@media print {
+    header::before {
+        content: "Roll Number: 22311A501 | Class: B.Tech CSE A | Page 12-15 Web Technologies Lab Record";
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+        opacity: 0.8;
+    }
+}
