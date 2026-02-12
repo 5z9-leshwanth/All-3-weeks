@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Manipulation with RegEx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Text Manipulation with RegEx</h1>
+</header>
+
+<main>
+    <div class="container">
+
+        <!-- Input Text Area -->
+        <textarea id="inputText" placeholder="Enter your text here..." rows="8"></textarea>
+
+        <!-- Search and Replace Inputs -->
+        <label for="searchText">Search for:</label>
+        <input type="text" id="searchText" placeholder="Enter search term">
+
+        <label for="replaceText">Replace with:</label>
+        <input type="text" id="replaceText" placeholder="Enter replacement text">
+
+        <!-- Buttons -->
+        <div class="button-group">
+            <button onclick="performSearch()">Search</button>
+            <button onclick="performReplace()">Replace</button>
+            <button onclick="performFormat()">Format</button>
+        </div>
+
+        <!-- Result Section -->
+        <div id="results">
+            <h2>Results</h2>
+            <textarea id="outputText" placeholder="Result will be displayed here..." rows="8" readonly></textarea>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Text Manipulation with RegEx. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
